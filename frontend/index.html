@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rslash - Personalized Reddit Feed</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #000;
+            color: #fff;
+            overflow: hidden;
+            height: 100vh;
+        }
+
+        .app {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            max-width: 500px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            padding: 20px;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent);
+        }
+
+        .header h1 {
+            font-size: 24px;
+            background: linear-gradient(45deg, #ff4500, #ff8717);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+        }
+
+        .user-selector {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .user-selector select {
+            background: rgba(255,255,255,0.1);
+            color: white;
+            border: 1px solid rgba(255,255,255,0.3);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .feed-container {
+            height: 100vh;
+            scroll-snap-type: y mandatory;
+            overflow-y: scroll;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+
+        .feed-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        .post-card {
+            height: 100vh;
+            scroll-snap-align: start;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+            position: relative;
+            background: linear-gradient(135deg, #1a1a2e, #0f0f1e);
+        }
+
+        .post-content {
+            max-height: 70vh;
+            overflow-y: auto;
+            padding: 20px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .subreddit-badge {
+            display: inline-block;
+            padding: 6px 12px;
+            background: linear-gradient(45deg, #ff4500, #ff8717);
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .post-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+
+        .post-text {
+            font-size: 16px;
+            line-height: 1.5;
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 20px;
+        }
+
+        .post-stats {
+            display: flex;
+            gap: 20px;
+            font-size: 14px;
+            color: rgba(255,255,255,0.6);
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .action-buttons {
+            position: absolute;
+            right: 20px;
+            bottom: 100px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .action-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,0.2);
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .action-btn:hover {
+            transform: scale(1.1);
+            background: rgba(255,255,255,0.2);
+        }
+
+        .action-btn.like:hover {
+            background: rgba(76, 175, 80, 0.5);
+            border-color: #4CAF50;
+        }
+
+        .action-btn.dislike:hover {
+            background: rgba(244, 67, 54, 0.5);
+            border-color: #f44336;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 50px;
+            font-size: 18px;
+            color: rgba(255,255,255,0.5);
+        }
+
+        .swipe-hint {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: rgba(255,255,255,0.4);
+            font-size: 14px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.4; }
+            50% { opacity: 0.8; }
+        }
+
+        .stats-panel {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(0,0,0,0.8);
+            padding: 10px 15px;
+            border-radius: 10px;
+            font-size: 12px;
+            color: rgba(255,255,255,0.6);
+        }
+
+        @media (max-width: 500px) {
+            .post-title {
+                font-size: 20px;
+            }
+            .post-text {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="app">
+        <div class="header">
+            <h1>rslash</h1>
+            <div class="user-selector">
+                <select id="userSelect">
+                    <option value="">Loading users...</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="feed-container" id="feedContainer">
+            <div class="loading">Loading your personalized feed...</div>
+        </div>
+
+        <div class="swipe-hint">Swipe up for next post</div>
+
+        <div class="stats-panel" id="statsPanel">
+            Likes: <span id="likeCount">0</span> | 
+            Viewed: <span id="viewCount">0</span>
+        </div>
+    </div>
+
+    <script>
+        const API_URL = 'http://localhost:8000';
+        let currentUser = null;
+        let posts = [];
+        let currentPostIndex = 0;
+        let stats = { likes: 0, dislikes: 0, viewed: 0 };
+        let interactionTimes = {};
+
+        // Load users on startup
+        async function loadUsers() {
+            try {
+                const response = await fetch(`${API_URL}/api/users`);
+                const data = await response.json();
+                const select = document.getElementById('userSelect');
+                
+                select.innerHTML = '<option value="">Choose a user...</option>';
+                data.users.forEach(user => {
+                    const option = document.createElement('option');
+                    option.value = user.user_id;
+                    option.textContent = `${user.username} (${user.total_interactions} interactions)`;
+                    select.appendChild(option);
+                });
+
+                // Auto-select first user
+                if (data.users.length > 0) {
+                    select.value = data.users[0].user_id;
+                    loadFeed(data.users[0].user_id);
+                }
+            } catch (error) {
+                console.error('Error loading users:', error);
+            }
+        }
+
+        // Load personalized feed
+        async function loadFeed(userId) {
+            if (!userId) return;
+            
+            currentUser = userId;
+            const container = document.getElementById('feedContainer');
+            container.innerHTML = '<div class="loading">Loading personalized feed...</div>';
+
+            try {
+                const response = await fetch(`${API_URL}/api/feed/${userId}?num_items=20`);
+                const data = await response.json();
+                posts = data.recommendations;
+                
+                if (posts.length === 0) {
+                    container.innerHTML = '<div class="loading">No posts available</div>';
+                    return;
+                }
+
+                renderFeed();
+            } catch (error) {
+                console.error('Error loading feed:', error);
+                container.innerHTML = '<div class="loading">Error loading feed. Is the API running?</div>';
+            }
+        }
+
+        // Render the feed
+        function renderFeed() {
+            const container = document.getElementById('feedContainer');
+            container.innerHTML = '';
+
+            posts.forEach((post, index) => {
+                const postCard = createPostCard(post, index);
+                container.appendChild(postCard);
+            });
+
+            // Track view time
+            startTrackingPost(posts[0].post_id);
+            stats.viewed = 1;
+            updateStats();
+        }
+
+        // Create a post card
+        function createPostCard(post, index) {
+            const card = document.createElement('div');
+            card.className = 'post-card';
+            card.dataset.postId = post.post_id;
+            card.dataset.index = index;
+
+            const content = post.content || 'Click to view on Reddit';
+            const truncatedContent = content.length > 500 ? content.substring(0, 500) + '...' : content;
+
+            card.innerHTML = `
+                <div class="post-content">
+                    <span class="subreddit-badge">r/${post.subreddit}</span>
+                    <h2 class="post-title">${post.title}</h2>
+                    <p class="post-text">${truncatedContent}</p>
+                    <div class="post-stats">
+                        <span>⬆️ ${post.score.toLocaleString()}</span>
+                        <span>💬 ${post.num_comments} comments</span>
+                        <span>🔗 <a href="${post.permalink}" target="_blank" style="color: #ff4500;">View on Reddit</a></span>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button class="action-btn like" onclick="handleInteraction('${post.post_id}', 'like')">👍</button>
+                    <button class="action-btn dislike" onclick="handleInteraction('${post.post_id}', 'dislike')">👎</button>
+                    <button class="action-btn" onclick="handleInteraction('${post.post_id}', 'skip')">⏭️</button>
+                </div>
+            `;
+
+            return card;
+        }
+
+        // Handle user interactions
+        async function handleInteraction(postId, type) {
+            if (!currentUser) return;
+
+            const timeSpent = getTimeSpent(postId);
+            
+            // Send feedback to API
+            try {
+                await fetch(`${API_URL}/api/feedback`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        user_id: currentUser,
+                        post_id: postId,
+                        interaction_type: type,
+                        time_spent: timeSpent
+                    })
+                });
+
+                // Update stats
+                if (type === 'like') stats.likes++;
+                if (type === 'dislike') stats.dislikes++;
+                updateStats();
+
+                // Visual feedback
+                const card = document.querySelector(`[data-post-id="${postId}"]`);
+                if (card) {
+                    card.style.opacity = '0.5';
+                    if (type === 'like') {
+                        card.style.border = '2px solid #4CAF50';
+                    } else if (type === 'dislike') {
+                        card.style.border = '2px solid #f44336';
+                    }
+                }
+
+                // Auto-scroll to next post after interaction
+                setTimeout(() => {
+                    scrollToNextPost();
+                }, 500);
+
+            } catch (error) {
+                console.error('Error sending feedback:', error);
+            }
+        }
+
+        // Track time spent on posts
+        function startTrackingPost(postId) {
+            interactionTimes[postId] = Date.now();
+        }
+
+        function getTimeSpent(postId) {
+            if (interactionTimes[postId]) {
+                return (Date.now() - interactionTimes[postId]) / 1000;
+            }
+            return 0;
+        }
+
+        // Scroll to next post
+        function scrollToNextPost() {
+            currentPostIndex++;
+            if (currentPostIndex < posts.length) {
+                const container = document.getElementById('feedContainer');
+                const nextCard = container.children[currentPostIndex];
+                if (nextCard) {
+                    nextCard.scrollIntoView({ behavior: 'smooth' });
+                    startTrackingPost(posts[currentPostIndex].post_id);
+                    stats.viewed++;
+                    updateStats();
+                }
+            } else {
+                // Load more posts
+                loadFeed(currentUser);
+            }
+        }
+
+        // Update stats display
+        function updateStats() {
+            document.getElementById('likeCount').textContent = stats.likes;
+            document.getElementById('viewCount').textContent = stats.viewed;
+        }
+
+        // Handle scroll events
+        let isScrolling = false;
+        document.getElementById('feedContainer').addEventListener('scroll', (e) => {
+            if (!isScrolling) {
+                window.requestAnimationFrame(() => {
+                    const container = e.target;
+                    const scrollPosition = container.scrollTop;
+                    const cardHeight = window.innerHeight;
+                    const newIndex = Math.round(scrollPosition / cardHeight);
+                    
+                    if (newIndex !== currentPostIndex && newIndex < posts.length) {
+                        // Track time for previous post
+                        if (posts[currentPostIndex]) {
+                            const timeSpent = getTimeSpent(posts[currentPostIndex].post_id);
+                            if (timeSpent > 2) { // Auto-track if viewed for more than 2 seconds
+                                handleInteraction(posts[currentPostIndex].post_id, 'skip');
+                            }
+                        }
+                        
+                        currentPostIndex = newIndex;
+                        startTrackingPost(posts[currentPostIndex].post_id);
+                        stats.viewed = Math.max(stats.viewed, currentPostIndex + 1);
+                        updateStats();
+                    }
+                    
+                    isScrolling = false;
+                });
+                isScrolling = true;
+            }
+        });
+
+        // Handle user selection change
+        document.getElementById('userSelect').addEventListener('change', (e) => {
+            if (e.target.value) {
+                stats = { likes: 0, dislikes: 0, viewed: 0 };
+                currentPostIndex = 0;
+                loadFeed(e.target.value);
+            }
+        });
+
+        // Keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+            if (!posts[currentPostIndex]) return;
+            
+            const postId = posts[currentPostIndex].post_id;
+            
+            switch(e.key) {
+                case 'ArrowUp':
+                case 'w':
+                    handleInteraction(postId, 'like');
+                    break;
+                case 'ArrowDown':
+                case 's':
+                    handleInteraction(postId, 'dislike');
+                    break;
+                case 'ArrowRight':
+                case ' ':
+                    scrollToNextPost();
+                    break;
+            }
+        });
+
+        // Initialize
+        loadUsers();
+    </script>
+</body>
+</html>

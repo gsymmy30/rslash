@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rslash Analytics Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .dashboard {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .metric-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 25px;
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: transform 0.3s;
+        }
+
+        .metric-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .metric-title {
+            font-size: 14px;
+            color: rgba(255,255,255,0.8);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .metric-value {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .metric-change {
+            font-size: 14px;
+            color: #4ade80;
+        }
+
+        .chart-container {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .chart-title {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        #engagementChart, #subredditChart {
+            width: 100%;
+            height: 300px;
+        }
+
+        .user-select {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .user-select select {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: 2px solid rgba(255,255,255,0.3);
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+            min-width: 200px;
+        }
+
+        .live-feed {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 25px;
+            margin-top: 20px;
+        }
+
+        .feed-item {
+            padding: 10px;
+            margin: 10px 0;
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            animation: slideIn 0.5s;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .recommendation-quality {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .quality-metric {
+            text-align: center;
+        }
+
+        .quality-score {
+            font-size: 48px;
+            font-weight: bold;
+            display: block;
+        }
+
+        .quality-label {
+            font-size: 14px;
+            color: rgba(255,255,255,0.8);
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <h1>🚀 rslash Analytics Dashboard</h1>
+        
+        <div class="user-select">
+            <select id="userSelect">
+                <option value="">Select a user...</option>
+            </select>
+        </div>
+
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-title">Total Interactions</div>
+                <div class="metric-value" id="totalInteractions">0</div>
+                <div class="metric-change">↑ Real-time</div>
+            </div>
+            
+            <div class="metric-card">
+                <div class="metric-title">Click-Through Rate</div>
+                <div class="metric-value" id="ctr">0%</div>
+                <div class="metric-change">Engagement metric</div>
+            </div>
+            
+            <div class="metric-card">
+                <div class="metric-title">Avg. Time per Post</div>
+                <div class="metric-value" id="avgTime">0s</div>
+                <div class="metric-change">User engagement</div>
+            </div>
+            
+            <div class="metric-card">
+                <div class="metric-title">Like/Dislike Ratio</div>
+                <div class="metric-value" id="likeRatio">0</div>
+                <div class="metric-change">Satisfaction score</div>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <h3 class="chart-title">Engagement Over Time</h3>
+            <canvas id="engagementChart"></canvas>
+        </div>
+
+        <div class="chart-container">
+            <h3 class="chart-title">Top Subreddits by Engagement</h3>
+            <canvas id="subredditChart"></canvas>
+        </div>
+
+        <div class="chart-container">
+            <h3 class="chart-title">Recommendation Algorithm Performance</h3>
+            <div class="recommendation-quality">
+                <div class="quality-metric">
+                    <span class="quality-score" id="precisionScore">0%</span>
+                    <span class="quality-label">Precision</span>
+                </div>
+                <div class="quality-metric">
+                    <span class="quality-score" id="diversityScore">0%</span>
+                    <span class="quality-label">Diversity</span>
+                </div>
+                <div class="quality-metric">
+                    <span class="quality-score" id="freshnessScore">0%</span>
+                    <span class="quality-label">Freshness</span>
+                </div>
+                <div class="quality-metric">
+                    <span class="quality-score" id="explorationScore">0%</span>
+                    <span class="quality-label">Exploration</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="live-feed">
+            <h3 class="chart-title">Live Interaction Feed</h3>
+            <div id="liveFeed"></div>
+        </div>
+    </div>
+
+    <script>
+        const API_URL = 'http://localhost:8000';
+        let engagementChart = null;
+        let subredditChart = null;
+        let currentUser = null;
+
+        // Initialize charts
+        function initCharts() {
+            // Engagement over time chart
+            const ctx1 = document.getElementById('engagementChart').getContext('2d');
+            engagementChart = new Chart(ctx1, {
+                type: 'line',
+                data: {
+                    labels: [],
+                    datasets: [{
+                        label: 'Likes',
+                        data: [],
+                        borderColor: '#4ade80',
+                        backgroundColor: 'rgba(74, 222, 128, 0.1)',
+                        tension: 0.4
+                    }, {
+                        label: 'Dislikes',
+                        data: [],
+                        borderColor: '#f87171',
+                        backgroundColor: 'rgba(248, 113, 113, 0.1)',
+                        tension: 0.4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            labels: { color: 'white' }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: { color: 'white' },
+                            grid: { color: 'rgba(255,255,255,0.1)' }
+                        },
+                        x: {
+                            ticks: { color: 'white' },
+                            grid: { color: 'rgba(255,255,255,0.1)' }
+                        }
+                    }
+                }
+            });
+
+            // Subreddit engagement chart
+            const ctx2 = document.getElementById('subredditChart').getContext('2d');
+            subredditChart = new Chart(ctx2, {
+                type: 'bar',
+                data: {
+                    labels: [],
+                    datasets: [{
+                        label: 'Engagement Score',
+                        data: [],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.5)',
+                            'rgba(54, 162, 235, 0.5)',
+                            'rgba(255, 206, 86, 0.5)',
+                            'rgba(75, 192, 192, 0.5)',
+                            'rgba(153, 102, 255, 0.5)'
+                        ],
+                        borderColor: [
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(153, 102, 255, 1)'
+                        ],
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: { color: 'white' },
+                            grid: { color: 'rgba(255,255,255,0.1)' }
+                        },
+                        x: {
+                            ticks: { color: 'white' },
+                            grid: { color: 'rgba(255,255,255,0.1)' }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Load users
+        async function loadUsers() {
+            try {
+                const response = await fetch(`${API_URL}/api/users`);
+                const data = await response.json();
+                const select = document.getElementById('userSelect');
+                
+                select.innerHTML = '<option value="">Select a user...</option>';
+                data.users.forEach(user => {
+                    const option = document.createElement('option');
+                    option.value = user.user_id;
+                    option.textContent = user.username;
+                    select.appendChild(option);
+                });
+            } catch (error) {
+                console.error('Error loading users:', error);
+            }
+        }
+
+        // Load user stats
+        async function loadUserStats(userId) {
+            if (!userId) return;
+            
+            currentUser = userId;
+            
+            try {
+                const response = await fetch(`${API_URL}/api/stats/${userId}`);
+                const data = await response.json();
+                
+                // Update metrics
+                document.getElementById('totalInteractions').textContent = data.stats.total_interactions;
+                
+                const ctr = data.stats.total_interactions > 0 
+                    ? ((data.stats.total_likes / data.stats.total_interactions) * 100).toFixed(1)
+                    : 0;
+                document.getElementById('ctr').textContent = ctr + '%';
+                
+                document.getElementById('avgTime').textContent = data.stats.avg_read_time.toFixed(1) + 's';
+                
+                const ratio = data.stats.total_dislikes > 0 
+                    ? (data.stats.total_likes / data.stats.total_dislikes).toFixed(2)
+                    : data.stats.total_likes;
+                document.getElementById('likeRatio').textContent = ratio;
+                
+                // Update subreddit chart
+                const subreddits = Object.keys(data.favorite_subreddits || {}).slice(0, 5);
+                const engagement = Object.values(data.favorite_subreddits || {}).slice(0, 5);
+                
+                subredditChart.data.labels = subreddits;
+                subredditChart.data.datasets[0].data = engagement;
+                subredditChart.update();
+                
+                // Calculate algorithm performance metrics
+                const precision = ctr;
+                document.getElementById('precisionScore').textContent = precision + '%';
+                
+                const diversity = subreddits.length > 0 ? Math.min(subreddits.length * 20, 100) : 0;
+                document.getElementById('diversityScore').textContent = diversity + '%';
+                
+                const freshness = 75; // Mock value - would calculate based on post ages
+                document.getElementById('freshnessScore').textContent = freshness + '%';
+                
+                const exploration = (data.stats.exploration_rate * 100).toFixed(0);
+                document.getElementById('explorationScore').textContent = exploration + '%';
+                
+                // Update engagement chart with mock time series
+                const times = ['10min ago', '8min ago', '6min ago', '4min ago', '2min ago', 'Now'];
+                const likes = [2, 3, 5, 6, 8, data.stats.total_likes];
+                const dislikes = [1, 1, 2, 2, 3, data.stats.total_dislikes];
+                
+                engagementChart.data.labels = times;
+                engagementChart.data.datasets[0].data = likes;
+                engagementChart.data.datasets[1].data = dislikes;
+                engagementChart.update();
+                
+                // Add to live feed
+                addToLiveFeed(`User stats loaded for ${data.username}`);
+                
+            } catch (error) {
+                console.error('Error loading stats:', error);
+            }
+        }
+
+        // Add item to live feed
+        function addToLiveFeed(message) {
+            const feed = document.getElementById('liveFeed');
+            const item = document.createElement('div');
+            item.className = 'feed-item';
+            item.textContent = `${new Date().toLocaleTimeString()} - ${message}`;
+            feed.insertBefore(item, feed.firstChild);
+            
+            // Keep only last 5 items
+            while (feed.children.length > 5) {
+                feed.removeChild(feed.lastChild);
+            }
+        }
+
+        // Simulate real-time updates
+        function simulateRealTimeUpdates() {
+            if (!currentUser) return;
+            
+            setInterval(() => {
+                // Randomly increment metrics to simulate activity
+                const interactions = document.getElementById('totalInteractions');
+                const current = parseInt(interactions.textContent);
+                
+                if (Math.random() > 0.7) {
+                    interactions.textContent = current + 1;
+                    
+                    const actions = ['liked a post', 'disliked a post', 'skipped a post'];
+                    const action = actions[Math.floor(Math.random() * actions.length)];
+                    addToLiveFeed(`User ${action}`);
+                    
+                    // Refresh stats
+                    loadUserStats(currentUser);
+                }
+            }, 5000);
+        }
+
+        // Handle user selection
+        document.getElementById('userSelect').addEventListener('change', (e) => {
+            if (e.target.value) {
+                loadUserStats(e.target.value);
+                simulateRealTimeUpdates();
+            }
+        });
+
+        // Initialize
+        initCharts();
+        loadUsers();
+    </script>
+</body>
+</html>

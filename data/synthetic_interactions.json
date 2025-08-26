@@ -1,0 +1,1759 @@
+[
+  {
+    "user_id": "tech_enthusiast",
+    "post_id": "1mzofsk",
+    "interaction_type": "like",
+    "time_spent": 45.5,
+    "timestamp": 1756132774.478266
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzofsk",
+    "interaction_type": "like",
+    "time_spent": 45.5,
+    "timestamp": 1756132774.478275
+  },
+  {
+    "user_id": "tech_enthusiast",
+    "post_id": "1mz4ftg",
+    "interaction_type": "like",
+    "time_spent": 36.8,
+    "timestamp": 1756102539.1012058
+  },
+  {
+    "user_id": "tech_enthusiast",
+    "post_id": "1mz6obd",
+    "interaction_type": "like",
+    "time_spent": 29.0,
+    "timestamp": 1756105115.101199
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzqigs",
+    "interaction_type": "dislike",
+    "time_spent": 2,
+    "timestamp": 1756138363.6855712
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzwliy",
+    "interaction_type": "dislike",
+    "time_spent": 2,
+    "timestamp": 1756142484.1855893
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mztqd1",
+    "interaction_type": "dislike",
+    "time_spent": 2,
+    "timestamp": 1756140603.78558
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzsqij",
+    "interaction_type": "dislike",
+    "time_spent": 2,
+    "timestamp": 1756139950.385579
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzqiwf",
+    "interaction_type": "dislike",
+    "time_spent": 2,
+    "timestamp": 1756138372.3855767
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzpabh",
+    "interaction_type": "dislike",
+    "time_spent": 2,
+    "timestamp": 1756137418.0855708
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzoy56",
+    "interaction_type": "dislike",
+    "time_spent": 2,
+    "timestamp": 1756137133.6855705
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzvk1h",
+    "interaction_type": "dislike",
+    "time_spent": 2,
+    "timestamp": 1756141806.7855906
+  },
+  {
+    "user_id": "tech_enthusiast",
+    "post_id": "1mxs92h",
+    "interaction_type": "like",
+    "time_spent": 42.2,
+    "timestamp": 1756033403.1012475
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mxs92h",
+    "interaction_type": "like",
+    "time_spent": 42.2,
+    "timestamp": 1756033403.1012495
+  },
+  {
+    "user_id": "tech_enthusiast",
+    "post_id": "1mv7cxz",
+    "interaction_type": "like",
+    "time_spent": 37.4,
+    "timestamp": 1755907335.6012483
+  },
+  {
+    "user_id": "tech_enthusiast",
+    "post_id": "1mwxdoz",
+    "interaction_type": "like",
+    "time_spent": 46.4,
+    "timestamp": 1755990459.1012485
+  },
+  {
+    "user_id": "tech_enthusiast",
+    "post_id": "1mubl8b",
+    "interaction_type": "like",
+    "time_spent": 45.8,
+    "timestamp": 1755865283.6012487
+  },
+  {
+    "user_id": "tech_enthusiast",
+    "post_id": "1mxdm22",
+    "interaction_type": "like",
+    "time_spent": 44.3,
+    "timestamp": 1756014087.6012483
+  },
+  {
+    "user_id": "tech_enthusiast",
+    "post_id": "1my7qr0",
+    "interaction_type": "like",
+    "time_spent": 41.3,
+    "timestamp": 1756056607.1014085
+  },
+  {
+    "user_id": "tech_enthusiast",
+    "post_id": "1mueqcy",
+    "interaction_type": "like",
+    "time_spent": 27.5,
+    "timestamp": 1755871150.1014123
+  },
+  {
+    "user_id": "tech_enthusiast",
+    "post_id": "1mx0t0g",
+    "interaction_type": "like",
+    "time_spent": 31.700000000000003,
+    "timestamp": 1755996793.101413
+  },
+  {
+    "user_id": "tech_enthusiast",
+    "post_id": "1mxa6hn",
+    "interaction_type": "like",
+    "time_spent": 35.6,
+    "timestamp": 1756010196.6014106
+  },
+  {
+    "user_id": "tech_enthusiast",
+    "post_id": "1my5lpo",
+    "interaction_type": "like",
+    "time_spent": 35.9,
+    "timestamp": 1756054131.1014106
+  },
+  {
+    "user_id": "tech_enthusiast",
+    "post_id": "1muvk0j",
+    "interaction_type": "like",
+    "time_spent": 46.4,
+    "timestamp": 1755890612.1014109
+  },
+  {
+    "user_id": "tech_enthusiast",
+    "post_id": "1mv9w9g",
+    "interaction_type": "like",
+    "time_spent": 50.0,
+    "timestamp": 1755912113.601408
+  },
+  {
+    "user_id": "tech_enthusiast",
+    "post_id": "1mxswpp",
+    "interaction_type": "like",
+    "time_spent": 35.3,
+    "timestamp": 1756034528.101408
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzqhru",
+    "interaction_type": "dislike",
+    "time_spent": 2,
+    "timestamp": 1756138348.6857836
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mznnd9",
+    "interaction_type": "dislike",
+    "time_spent": 2,
+    "timestamp": 1756135958.2857735
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzngio",
+    "interaction_type": "dislike",
+    "time_spent": 2,
+    "timestamp": 1756135774.385773
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzmw3w",
+    "interaction_type": "dislike",
+    "time_spent": 2,
+    "timestamp": 1756135201.3857737
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mzqe6w",
+    "interaction_type": "like",
+    "time_spent": 45.2,
+    "timestamp": 1756135404.939886
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzqe6w",
+    "interaction_type": "like",
+    "time_spent": 45.2,
+    "timestamp": 1756135404.939888
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mzsrrb",
+    "interaction_type": "like",
+    "time_spent": 35.9,
+    "timestamp": 1756138236.4399
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzsrrb",
+    "interaction_type": "like",
+    "time_spent": 35.9,
+    "timestamp": 1756138236.439902
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mzrf1l",
+    "interaction_type": "like",
+    "time_spent": 32.6,
+    "timestamp": 1756136658.9398978
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mzhn75",
+    "interaction_type": "like",
+    "time_spent": 60.5,
+    "timestamp": 1756120368.939879
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzhn75",
+    "interaction_type": "like",
+    "time_spent": 60.5,
+    "timestamp": 1756120368.939881
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mz6omd",
+    "interaction_type": "like",
+    "time_spent": 41.599999999999994,
+    "timestamp": 1756105122.8733335
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mz6omd",
+    "interaction_type": "like",
+    "time_spent": 41.599999999999994,
+    "timestamp": 1756105122.8733356
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mz6nor",
+    "interaction_type": "like",
+    "time_spent": 32.0,
+    "timestamp": 1756105093.8733335
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mz6nor",
+    "interaction_type": "like",
+    "time_spent": 32.0,
+    "timestamp": 1756105093.8733354
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mz5ylg",
+    "interaction_type": "like",
+    "time_spent": 37.4,
+    "timestamp": 1756104289.3733315
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mz5ylg",
+    "interaction_type": "like",
+    "time_spent": 37.4,
+    "timestamp": 1756104289.3733335
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mzaxgk",
+    "interaction_type": "like",
+    "time_spent": 41.3,
+    "timestamp": 1756110341.3733327
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzaxgk",
+    "interaction_type": "like",
+    "time_spent": 41.3,
+    "timestamp": 1756110341.373335
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mzcpmw",
+    "interaction_type": "like",
+    "time_spent": 90.5,
+    "timestamp": 1756112786.8733337
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1myt9j1",
+    "interaction_type": "like",
+    "time_spent": 23.9,
+    "timestamp": 1756088975.2052913
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1myt9j1",
+    "interaction_type": "like",
+    "time_spent": 23.9,
+    "timestamp": 1756088975.2052937
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1myyyw0",
+    "interaction_type": "like",
+    "time_spent": 62.0,
+    "timestamp": 1756096389.8733344
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1myyyw0",
+    "interaction_type": "like",
+    "time_spent": 62.0,
+    "timestamp": 1756096389.8733368
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mzgwf4",
+    "interaction_type": "like",
+    "time_spent": 32.6,
+    "timestamp": 1756119097.4399047
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mzbfw1",
+    "interaction_type": "like",
+    "time_spent": 68.30000000000001,
+    "timestamp": 1756111023.873332
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1myggvg",
+    "interaction_type": "like",
+    "time_spent": 36.5,
+    "timestamp": 1756067257.705348
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1myggvg",
+    "interaction_type": "like",
+    "time_spent": 36.5,
+    "timestamp": 1756067257.70535
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mulmzl",
+    "interaction_type": "like",
+    "time_spent": 27.2,
+    "timestamp": 1755879907.2053437
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mulmzl",
+    "interaction_type": "like",
+    "time_spent": 27.2,
+    "timestamp": 1755879907.2053452
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mwcjuu",
+    "interaction_type": "like",
+    "time_spent": 27.8,
+    "timestamp": 1755964618.2053404
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mwcjuu",
+    "interaction_type": "like",
+    "time_spent": 27.8,
+    "timestamp": 1755964618.2053423
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mw2gl4",
+    "interaction_type": "like",
+    "time_spent": 68.0,
+    "timestamp": 1755948588.2053418
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mw2gl4",
+    "interaction_type": "like",
+    "time_spent": 68.0,
+    "timestamp": 1755948588.2053428
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mvcbc9",
+    "interaction_type": "like",
+    "time_spent": 25.4,
+    "timestamp": 1755916201.7053428
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mvcbc9",
+    "interaction_type": "like",
+    "time_spent": 25.4,
+    "timestamp": 1755916201.7053437
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mw8h07",
+    "interaction_type": "like",
+    "time_spent": 22.1,
+    "timestamp": 1755959434.7053428
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mw8h07",
+    "interaction_type": "like",
+    "time_spent": 22.1,
+    "timestamp": 1755959434.7053447
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1my7sie",
+    "interaction_type": "like",
+    "time_spent": 32.3,
+    "timestamp": 1756056661.7053442
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1my7sie",
+    "interaction_type": "like",
+    "time_spent": 32.3,
+    "timestamp": 1756056661.705347
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mwivw1",
+    "interaction_type": "like",
+    "time_spent": 37.099999999999994,
+    "timestamp": 1755971515.205347
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mwivw1",
+    "interaction_type": "like",
+    "time_spent": 37.099999999999994,
+    "timestamp": 1755971515.205348
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mxjcnh",
+    "interaction_type": "like",
+    "time_spent": 40.400000000000006,
+    "timestamp": 1756020756.705348
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mxjcnh",
+    "interaction_type": "like",
+    "time_spent": 40.400000000000006,
+    "timestamp": 1756020756.705349
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mvi1e1",
+    "interaction_type": "like",
+    "time_spent": 32.3,
+    "timestamp": 1755923213.7053475
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mvi1e1",
+    "interaction_type": "like",
+    "time_spent": 32.3,
+    "timestamp": 1755923213.7053494
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mwwgn3",
+    "interaction_type": "like",
+    "time_spent": 35.0,
+    "timestamp": 1755988954.7053497
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mwwgn3",
+    "interaction_type": "like",
+    "time_spent": 35.0,
+    "timestamp": 1755988954.7053506
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mv4nxp",
+    "interaction_type": "like",
+    "time_spent": 27.2,
+    "timestamp": 1755902689.7053485
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mv4nxp",
+    "interaction_type": "like",
+    "time_spent": 27.2,
+    "timestamp": 1755902689.7053504
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1my6u4x",
+    "interaction_type": "like",
+    "time_spent": 22.7,
+    "timestamp": 1756055576.7053504
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1my6u4x",
+    "interaction_type": "like",
+    "time_spent": 22.7,
+    "timestamp": 1756055576.7053523
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1my5okk",
+    "interaction_type": "like",
+    "time_spent": 28.1,
+    "timestamp": 1756054222.2053494
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1my5okk",
+    "interaction_type": "like",
+    "time_spent": 28.1,
+    "timestamp": 1756054222.2053516
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzwm52",
+    "interaction_type": "dislike",
+    "time_spent": 2,
+    "timestamp": 1756142495.2627165
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzwbjc",
+    "interaction_type": "dislike",
+    "time_spent": 2,
+    "timestamp": 1756142302.9627147
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzs6mx",
+    "interaction_type": "dislike",
+    "time_spent": 2,
+    "timestamp": 1756139573.5627058
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzqcex",
+    "interaction_type": "dislike",
+    "time_spent": 2,
+    "timestamp": 1756138238.5627017
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzlg7q",
+    "interaction_type": "dislike",
+    "time_spent": 2,
+    "timestamp": 1756133608.3627002
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzhwqp",
+    "interaction_type": "dislike",
+    "time_spent": 2,
+    "timestamp": 1756129525.9627
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzkt5j",
+    "interaction_type": "dislike",
+    "time_spent": 2,
+    "timestamp": 1756132845.4626966
+  },
+  {
+    "user_id": "knowledge_seeker",
+    "post_id": "1mzsbf2",
+    "interaction_type": "like",
+    "time_spent": 101.9,
+    "timestamp": 1756137721.811381
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzsbf2",
+    "interaction_type": "like",
+    "time_spent": 101.9,
+    "timestamp": 1756137721.811382
+  },
+  {
+    "user_id": "knowledge_seeker",
+    "post_id": "1mzomkl",
+    "interaction_type": "like",
+    "time_spent": 109.10000000000001,
+    "timestamp": 1756133042.3113546
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzomkl",
+    "interaction_type": "like",
+    "time_spent": 109.10000000000001,
+    "timestamp": 1756133042.3113565
+  },
+  {
+    "user_id": "knowledge_seeker",
+    "post_id": "1mzuy1u",
+    "interaction_type": "like",
+    "time_spent": 84.2,
+    "timestamp": 1756140620.3113918
+  },
+  {
+    "user_id": "knowledge_seeker",
+    "post_id": "1mzqov6",
+    "interaction_type": "like",
+    "time_spent": 92.30000000000001,
+    "timestamp": 1756135774.3113685
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzqov6",
+    "interaction_type": "like",
+    "time_spent": 92.30000000000001,
+    "timestamp": 1756135774.3113704
+  },
+  {
+    "user_id": "knowledge_seeker",
+    "post_id": "1mzgdtz",
+    "interaction_type": "like",
+    "time_spent": 66.5,
+    "timestamp": 1756118253.0638733
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzgdtz",
+    "interaction_type": "like",
+    "time_spent": 66.5,
+    "timestamp": 1756118253.0638747
+  },
+  {
+    "user_id": "knowledge_seeker",
+    "post_id": "1mzowud",
+    "interaction_type": "like",
+    "time_spent": 43.1,
+    "timestamp": 1756133448.3113723
+  },
+  {
+    "user_id": "knowledge_seeker",
+    "post_id": "1mz7pjl",
+    "interaction_type": "like",
+    "time_spent": 106.10000000000001,
+    "timestamp": 1756106324.563874
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mz7pjl",
+    "interaction_type": "like",
+    "time_spent": 106.10000000000001,
+    "timestamp": 1756106324.563875
+  },
+  {
+    "user_id": "knowledge_seeker",
+    "post_id": "1mz4mr6",
+    "interaction_type": "like",
+    "time_spent": 109.10000000000001,
+    "timestamp": 1756102758.933267
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mz4mr6",
+    "interaction_type": "like",
+    "time_spent": 109.10000000000001,
+    "timestamp": 1756102758.9332693
+  },
+  {
+    "user_id": "knowledge_seeker",
+    "post_id": "1mz40vz",
+    "interaction_type": "like",
+    "time_spent": 110.0,
+    "timestamp": 1756102073.9332643
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mz40vz",
+    "interaction_type": "like",
+    "time_spent": 110.0,
+    "timestamp": 1756102073.9332652
+  },
+  {
+    "user_id": "knowledge_seeker",
+    "post_id": "1mzon8u",
+    "interaction_type": "like",
+    "time_spent": 72.8,
+    "timestamp": 1756133069.8113818
+  },
+  {
+    "user_id": "knowledge_seeker",
+    "post_id": "1mzf3ey",
+    "interaction_type": "like",
+    "time_spent": 76.4,
+    "timestamp": 1756116238.0638747
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzf3ey",
+    "interaction_type": "like",
+    "time_spent": 76.4,
+    "timestamp": 1756116238.0638757
+  },
+  {
+    "user_id": "knowledge_seeker",
+    "post_id": "1mzcnvt",
+    "interaction_type": "like",
+    "time_spent": 36.5,
+    "timestamp": 1756112718.0638745
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzcnvt",
+    "interaction_type": "like",
+    "time_spent": 36.5,
+    "timestamp": 1756112718.0638757
+  },
+  {
+    "user_id": "knowledge_seeker",
+    "post_id": "1mz8yt6",
+    "interaction_type": "like",
+    "time_spent": 55.099999999999994,
+    "timestamp": 1756107856.5638738
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mz8yt6",
+    "interaction_type": "like",
+    "time_spent": 55.099999999999994,
+    "timestamp": 1756107856.563877
+  },
+  {
+    "user_id": "knowledge_seeker",
+    "post_id": "1mznk3r",
+    "interaction_type": "like",
+    "time_spent": 100.7,
+    "timestamp": 1756131397.311387
+  },
+  {
+    "user_id": "knowledge_seeker",
+    "post_id": "1mzlmcj",
+    "interaction_type": "like",
+    "time_spent": 84.2,
+    "timestamp": 1756127959.5638762
+  },
+  {
+    "user_id": "knowledge_seeker",
+    "post_id": "1myyfkk",
+    "interaction_type": "like",
+    "time_spent": 55.699999999999996,
+    "timestamp": 1756095770.933289
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1myyfkk",
+    "interaction_type": "like",
+    "time_spent": 55.699999999999996,
+    "timestamp": 1756095770.9332907
+  },
+  {
+    "user_id": "knowledge_seeker",
+    "post_id": "1mv95tp",
+    "interaction_type": "like",
+    "time_spent": 92.30000000000001,
+    "timestamp": 1755910730.9333096
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mv95tp",
+    "interaction_type": "like",
+    "time_spent": 92.30000000000001,
+    "timestamp": 1755910730.9333105
+  },
+  {
+    "user_id": "knowledge_seeker",
+    "post_id": "1myivvc",
+    "interaction_type": "like",
+    "time_spent": 109.7,
+    "timestamp": 1756070798.4333081
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1myivvc",
+    "interaction_type": "like",
+    "time_spent": 109.7,
+    "timestamp": 1756070798.433309
+  },
+  {
+    "user_id": "knowledge_seeker",
+    "post_id": "1mx1715",
+    "interaction_type": "like",
+    "time_spent": 100.7,
+    "timestamp": 1755997545.4333086
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mx1715",
+    "interaction_type": "like",
+    "time_spent": 100.7,
+    "timestamp": 1755997545.4333105
+  },
+  {
+    "user_id": "knowledge_seeker",
+    "post_id": "1muzwpy",
+    "interaction_type": "like",
+    "time_spent": 84.80000000000001,
+    "timestamp": 1755895930.4333088
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1muzwpy",
+    "interaction_type": "like",
+    "time_spent": 84.80000000000001,
+    "timestamp": 1755895930.43331
+  },
+  {
+    "user_id": "knowledge_seeker",
+    "post_id": "1mx2pel",
+    "interaction_type": "like",
+    "time_spent": 77.6,
+    "timestamp": 1756000373.9333014
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mx2pel",
+    "interaction_type": "like",
+    "time_spent": 77.6,
+    "timestamp": 1756000373.9333024
+  },
+  {
+    "user_id": "knowledge_seeker",
+    "post_id": "1mum1g4",
+    "interaction_type": "like",
+    "time_spent": 102.8,
+    "timestamp": 1755880338.4333005
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mum1g4",
+    "interaction_type": "like",
+    "time_spent": 102.8,
+    "timestamp": 1755880338.4333014
+  },
+  {
+    "user_id": "knowledge_seeker",
+    "post_id": "1mucxyd",
+    "interaction_type": "like",
+    "time_spent": 53.9,
+    "timestamp": 1755867865.4333017
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mucxyd",
+    "interaction_type": "like",
+    "time_spent": 53.9,
+    "timestamp": 1755867865.4333024
+  },
+  {
+    "user_id": "knowledge_seeker",
+    "post_id": "1mtwaz3",
+    "interaction_type": "like",
+    "time_spent": 77.9,
+    "timestamp": 1755844395.9333024
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mtwaz3",
+    "interaction_type": "like",
+    "time_spent": 77.9,
+    "timestamp": 1755844395.9333034
+  },
+  {
+    "user_id": "knowledge_seeker",
+    "post_id": "1mvm9oa",
+    "interaction_type": "like",
+    "time_spent": 59.300000000000004,
+    "timestamp": 1755927723.433303
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mvm9oa",
+    "interaction_type": "like",
+    "time_spent": 59.300000000000004,
+    "timestamp": 1755927723.433304
+  },
+  {
+    "user_id": "knowledge_seeker",
+    "post_id": "1mxjalx",
+    "interaction_type": "like",
+    "time_spent": 55.699999999999996,
+    "timestamp": 1756020685.9333043
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mxjalx",
+    "interaction_type": "like",
+    "time_spent": 55.699999999999996,
+    "timestamp": 1756020685.9333053
+  },
+  {
+    "user_id": "knowledge_seeker",
+    "post_id": "1mw83ts",
+    "interaction_type": "like",
+    "time_spent": 79.7,
+    "timestamp": 1755958879.9333029
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mw83ts",
+    "interaction_type": "like",
+    "time_spent": 79.7,
+    "timestamp": 1755958879.933304
+  },
+  {
+    "user_id": "knowledge_seeker",
+    "post_id": "1mxyxa5",
+    "interaction_type": "like",
+    "time_spent": 56.6,
+    "timestamp": 1756045470.4333024
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mxyxa5",
+    "interaction_type": "like",
+    "time_spent": 56.6,
+    "timestamp": 1756045470.4333045
+  },
+  {
+    "user_id": "knowledge_seeker",
+    "post_id": "1myefyw",
+    "interaction_type": "like",
+    "time_spent": 108.8,
+    "timestamp": 1756064624.433303
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1myefyw",
+    "interaction_type": "like",
+    "time_spent": 108.8,
+    "timestamp": 1756064624.433305
+  },
+  {
+    "user_id": "knowledge_seeker",
+    "post_id": "1mzvpip",
+    "interaction_type": "like",
+    "time_spent": 48.5,
+    "timestamp": 1756141461.3114867
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzvhcy",
+    "interaction_type": "dislike",
+    "time_spent": 2,
+    "timestamp": 1756141757.4856436
+  },
+  {
+    "user_id": "knowledge_seeker",
+    "post_id": "1mzthmy",
+    "interaction_type": "like",
+    "time_spent": 43.1,
+    "timestamp": 1756139019.3114753
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzsah4",
+    "interaction_type": "dislike",
+    "time_spent": 2,
+    "timestamp": 1756139646.985629
+  },
+  {
+    "user_id": "knowledge_seeker",
+    "post_id": "1mznm7u",
+    "interaction_type": "like",
+    "time_spent": 81.5,
+    "timestamp": 1756131490.3114443
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mzsr45",
+    "interaction_type": "like",
+    "time_spent": 59.0,
+    "timestamp": 1756138215.0733442
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzsr45",
+    "interaction_type": "like",
+    "time_spent": 59.0,
+    "timestamp": 1756138215.0733452
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mzur2x",
+    "interaction_type": "like",
+    "time_spent": 76.1,
+    "timestamp": 1756140405.073356
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mzvz6w",
+    "interaction_type": "like",
+    "time_spent": 63.5,
+    "timestamp": 1756141757.5733886
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mzuauv",
+    "interaction_type": "like",
+    "time_spent": 39.2,
+    "timestamp": 1756139914.0733554
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mzuz3v",
+    "interaction_type": "like",
+    "time_spent": 300,
+    "timestamp": 1756140653.073378
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mzs2ou",
+    "interaction_type": "like",
+    "time_spent": 74.30000000000001,
+    "timestamp": 1756137438.0733554
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mzjtp1",
+    "interaction_type": "like",
+    "time_spent": 28.1,
+    "timestamp": 1756124413.8751063
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mzoxis",
+    "interaction_type": "like",
+    "time_spent": 68.0,
+    "timestamp": 1756133475.875104
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1myx6rb",
+    "interaction_type": "like",
+    "time_spent": 23.9,
+    "timestamp": 1756094333.8751042
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1myx6rb",
+    "interaction_type": "like",
+    "time_spent": 23.9,
+    "timestamp": 1756094333.8751059
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mz5w6x",
+    "interaction_type": "like",
+    "time_spent": 115.7,
+    "timestamp": 1756104209.875104
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mz5w6x",
+    "interaction_type": "like",
+    "time_spent": 115.7,
+    "timestamp": 1756104209.8751051
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mzg2s9",
+    "interaction_type": "like",
+    "time_spent": 71.6,
+    "timestamp": 1756117759.3750901
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1myt824",
+    "interaction_type": "like",
+    "time_spent": 59.0,
+    "timestamp": 1756088907.8750906
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1myt824",
+    "interaction_type": "like",
+    "time_spent": 59.0,
+    "timestamp": 1756088907.8750925
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1muqgmb",
+    "interaction_type": "like",
+    "time_spent": 50.6,
+    "timestamp": 1755885076.7410536
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1muqgmb",
+    "interaction_type": "like",
+    "time_spent": 50.6,
+    "timestamp": 1755885076.7410545
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mvpud4",
+    "interaction_type": "like",
+    "time_spent": 57.8,
+    "timestamp": 1755931605.741049
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mvpud4",
+    "interaction_type": "like",
+    "time_spent": 57.8,
+    "timestamp": 1755931605.74105
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mwyc3d",
+    "interaction_type": "like",
+    "time_spent": 30.799999999999997,
+    "timestamp": 1755992102.2410471
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mwyc3d",
+    "interaction_type": "like",
+    "time_spent": 30.799999999999997,
+    "timestamp": 1755992102.241049
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mx3lmx",
+    "interaction_type": "like",
+    "time_spent": 48.5,
+    "timestamp": 1756001864.7410457
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mx3lmx",
+    "interaction_type": "like",
+    "time_spent": 48.5,
+    "timestamp": 1756001864.7410474
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mxmni3",
+    "interaction_type": "like",
+    "time_spent": 118.39999999999999,
+    "timestamp": 1756024950.741045
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mxmni3",
+    "interaction_type": "like",
+    "time_spent": 118.39999999999999,
+    "timestamp": 1756024950.741047
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1my41lb",
+    "interaction_type": "like",
+    "time_spent": 41.0,
+    "timestamp": 1756052314.240901
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1my41lb",
+    "interaction_type": "like",
+    "time_spent": 41.0,
+    "timestamp": 1756052314.240902
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mw8fmt",
+    "interaction_type": "like",
+    "time_spent": 122.6,
+    "timestamp": 1755959376.7408977
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mw8fmt",
+    "interaction_type": "like",
+    "time_spent": 122.6,
+    "timestamp": 1755959376.7408996
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mui28e",
+    "interaction_type": "like",
+    "time_spent": 102.5,
+    "timestamp": 1755875880.2408977
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mui28e",
+    "interaction_type": "like",
+    "time_spent": 102.5,
+    "timestamp": 1755875880.2408986
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mw43np",
+    "interaction_type": "like",
+    "time_spent": 53.0,
+    "timestamp": 1755951580.240897
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mw43np",
+    "interaction_type": "like",
+    "time_spent": 53.0,
+    "timestamp": 1755951580.240899
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mx48jz",
+    "interaction_type": "like",
+    "time_spent": 58.1,
+    "timestamp": 1756002857.740897
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mx48jz",
+    "interaction_type": "like",
+    "time_spent": 58.1,
+    "timestamp": 1756002857.7408988
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1my25pv",
+    "interaction_type": "like",
+    "time_spent": 48.8,
+    "timestamp": 1756050016.7408972
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1my25pv",
+    "interaction_type": "like",
+    "time_spent": 48.8,
+    "timestamp": 1756050016.7408986
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mwcotl",
+    "interaction_type": "like",
+    "time_spent": 38.9,
+    "timestamp": 1755964767.240887
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mwcotl",
+    "interaction_type": "like",
+    "time_spent": 38.9,
+    "timestamp": 1755964767.240888
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1my70go",
+    "interaction_type": "like",
+    "time_spent": 84.2,
+    "timestamp": 1756055777.240885
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1my70go",
+    "interaction_type": "like",
+    "time_spent": 84.2,
+    "timestamp": 1756055777.240886
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mu0nyd",
+    "interaction_type": "like",
+    "time_spent": 48.8,
+    "timestamp": 1755849299.2408848
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mu0nyd",
+    "interaction_type": "like",
+    "time_spent": 48.8,
+    "timestamp": 1755849299.2408872
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1my6yxr",
+    "interaction_type": "like",
+    "time_spent": 56.6,
+    "timestamp": 1756055729.7408855
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1my6yxr",
+    "interaction_type": "like",
+    "time_spent": 56.6,
+    "timestamp": 1756055729.7408864
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1munnz6",
+    "interaction_type": "like",
+    "time_spent": 53.300000000000004,
+    "timestamp": 1755882078.7408855
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1munnz6",
+    "interaction_type": "like",
+    "time_spent": 53.300000000000004,
+    "timestamp": 1755882078.7408864
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzwn15",
+    "interaction_type": "dislike",
+    "time_spent": 2,
+    "timestamp": 1756142510.942877
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzwfuz",
+    "interaction_type": "dislike",
+    "time_spent": 2,
+    "timestamp": 1756142381.0428743
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzvkw6",
+    "interaction_type": "dislike",
+    "time_spent": 2,
+    "timestamp": 1756141820.9428706
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzvhm3",
+    "interaction_type": "dislike",
+    "time_spent": 2,
+    "timestamp": 1756141761.242869
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzvdyh",
+    "interaction_type": "dislike",
+    "time_spent": 2,
+    "timestamp": 1756141695.5428681
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzv815",
+    "interaction_type": "dislike",
+    "time_spent": 2,
+    "timestamp": 1756141584.8428662
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzutgy",
+    "interaction_type": "dislike",
+    "time_spent": 2,
+    "timestamp": 1756141317.8428633
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzpidm",
+    "interaction_type": "dislike",
+    "time_spent": 2,
+    "timestamp": 1756137603.2428484
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mzqo8t",
+    "interaction_type": "like",
+    "time_spent": 95.6,
+    "timestamp": 1756135750.6476276
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzqo8t",
+    "interaction_type": "like",
+    "time_spent": 95.6,
+    "timestamp": 1756135750.6476285
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mzua9j",
+    "interaction_type": "like",
+    "time_spent": 53.0,
+    "timestamp": 1756139895.7316651
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mzo9y8",
+    "interaction_type": "like",
+    "time_spent": 81.80000000000001,
+    "timestamp": 1756132527.147625
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mznt8z",
+    "interaction_type": "like",
+    "time_spent": 47.6,
+    "timestamp": 1756131802.647625
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mznouj",
+    "interaction_type": "like",
+    "time_spent": 138.8,
+    "timestamp": 1756131607.6476235
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mzsudl",
+    "interaction_type": "like",
+    "time_spent": 80.89999999999999,
+    "timestamp": 1756138316.64762
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mzqvvq",
+    "interaction_type": "like",
+    "time_spent": 173.9,
+    "timestamp": 1756136019.1476192
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mz3kxn",
+    "interaction_type": "like",
+    "time_spent": 86.3,
+    "timestamp": 1756101564.4421535
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mz3kxn",
+    "interaction_type": "like",
+    "time_spent": 86.3,
+    "timestamp": 1756101564.4421554
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mz14py",
+    "interaction_type": "like",
+    "time_spent": 40.400000000000006,
+    "timestamp": 1756098826.9421673
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mz14py",
+    "interaction_type": "like",
+    "time_spent": 40.400000000000006,
+    "timestamp": 1756098826.9421694
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mzgqzu",
+    "interaction_type": "like",
+    "time_spent": 45.5,
+    "timestamp": 1756118842.1476178
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mz3qz2",
+    "interaction_type": "like",
+    "time_spent": 59.0,
+    "timestamp": 1756101759.1476123
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mvj7vy",
+    "interaction_type": "like",
+    "time_spent": 35.3,
+    "timestamp": 1755924476.9422045
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mvj7vy",
+    "interaction_type": "like",
+    "time_spent": 35.3,
+    "timestamp": 1755924476.9422064
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mvgr1g",
+    "interaction_type": "like",
+    "time_spent": 65.0,
+    "timestamp": 1755921793.942203
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mvgr1g",
+    "interaction_type": "like",
+    "time_spent": 65.0,
+    "timestamp": 1755921793.942205
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mwbwjx",
+    "interaction_type": "like",
+    "time_spent": 50.3,
+    "timestamp": 1755963886.442203
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mwbwjx",
+    "interaction_type": "like",
+    "time_spent": 50.3,
+    "timestamp": 1755963886.442205
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mukrh0",
+    "interaction_type": "like",
+    "time_spent": 61.1,
+    "timestamp": 1755878965.9422028
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mukrh0",
+    "interaction_type": "like",
+    "time_spent": 61.1,
+    "timestamp": 1755878965.942204
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mw43g4",
+    "interaction_type": "like",
+    "time_spent": 30.799999999999997,
+    "timestamp": 1755951567.942202
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mw43g4",
+    "interaction_type": "like",
+    "time_spent": 30.799999999999997,
+    "timestamp": 1755951567.942204
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mwgt0g",
+    "interaction_type": "like",
+    "time_spent": 31.4,
+    "timestamp": 1755969209.9422035
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mwgt0g",
+    "interaction_type": "like",
+    "time_spent": 31.4,
+    "timestamp": 1755969209.9422057
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mwbraa",
+    "interaction_type": "like",
+    "time_spent": 60.5,
+    "timestamp": 1755963718.4422035
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mwbraa",
+    "interaction_type": "like",
+    "time_spent": 60.5,
+    "timestamp": 1755963718.4422045
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mv2329",
+    "interaction_type": "like",
+    "time_spent": 41.0,
+    "timestamp": 1755898893.9422028
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mv2329",
+    "interaction_type": "like",
+    "time_spent": 41.0,
+    "timestamp": 1755898893.942205
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mumubp",
+    "interaction_type": "like",
+    "time_spent": 31.700000000000003,
+    "timestamp": 1755881189.9422033
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mumubp",
+    "interaction_type": "like",
+    "time_spent": 31.700000000000003,
+    "timestamp": 1755881189.9422054
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mtx1rn",
+    "interaction_type": "like",
+    "time_spent": 41.9,
+    "timestamp": 1755845214.442204
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mtx1rn",
+    "interaction_type": "like",
+    "time_spent": 41.9,
+    "timestamp": 1755845214.4422061
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mxh6hq",
+    "interaction_type": "like",
+    "time_spent": 41.599999999999994,
+    "timestamp": 1756018173.442202
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mxh6hq",
+    "interaction_type": "like",
+    "time_spent": 41.599999999999994,
+    "timestamp": 1756018173.442204
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mvldjm",
+    "interaction_type": "like",
+    "time_spent": 48.5,
+    "timestamp": 1755926782.9422019
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mvldjm",
+    "interaction_type": "like",
+    "time_spent": 48.5,
+    "timestamp": 1755926782.9422028
+  },
+  {
+    "user_id": "entertainment_lover",
+    "post_id": "1mvr6vw",
+    "interaction_type": "like",
+    "time_spent": 34.7,
+    "timestamp": 1755933102.9422016
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mvr6vw",
+    "interaction_type": "like",
+    "time_spent": 34.7,
+    "timestamp": 1755933102.9422035
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzw242",
+    "interaction_type": "dislike",
+    "time_spent": 2,
+    "timestamp": 1756142138.4378767
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzw00y",
+    "interaction_type": "dislike",
+    "time_spent": 2,
+    "timestamp": 1756142100.6378703
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzvz87",
+    "interaction_type": "dislike",
+    "time_spent": 2,
+    "timestamp": 1756142086.2378695
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzvx4t",
+    "interaction_type": "dislike",
+    "time_spent": 2,
+    "timestamp": 1756142049.0378683
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzuj2l",
+    "interaction_type": "dislike",
+    "time_spent": 2,
+    "timestamp": 1756141125.937866
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mzu932",
+    "interaction_type": "dislike",
+    "time_spent": 2,
+    "timestamp": 1756140946.8378572
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mztpyh",
+    "interaction_type": "dislike",
+    "time_spent": 2,
+    "timestamp": 1756140594.0378566
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mztgxz",
+    "interaction_type": "dislike",
+    "time_spent": 2,
+    "timestamp": 1756140429.9378562
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mztgfn",
+    "interaction_type": "dislike",
+    "time_spent": 2,
+    "timestamp": 1756140420.9378552
+  },
+  {
+    "user_id": "casual_browser",
+    "post_id": "1mxwh9y",
+    "interaction_type": "dislike",
+    "time_spent": 2,
+    "timestamp": 1756081704.3533003
+  }
+]
